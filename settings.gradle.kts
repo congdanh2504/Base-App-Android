@@ -22,4 +22,6 @@ dependencyResolutionManagement {
 
 rootProject.name = "BaseApp"
 include(":app")
- 
+include(":data")
+include(":common")
+include(":domain")

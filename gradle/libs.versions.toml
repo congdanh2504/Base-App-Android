@@ -12,6 +12,9 @@ activityCompose = "1.8.0"
 composeBom = "2023.08.00"
 hilt = "2.48.1"
 room = "2.6.0"
+appcompat = "1.7.0"
+material = "1.12.0"
+kotlinxCoroutines = "1.7.3"
 
 [libraries]
 androidx-core-ktx = { group = "androidx.core", name = "core-ktx", version.ref = "coreKtx" }
@@ -38,6 +41,10 @@ android-desugarJdkLibs = { group = "com.android.tools", name = "desugar_jdk_libs
 android-gradlePlugin = { group = "com.android.tools.build", name = "gradle", version.ref = "agp" }
 kotlin-gradlePlugin = { group = "org.jetbrains.kotlin", name = "kotlin-gradle-plugin", version.ref = "kotlin" }
 ksp-gradlePlugin = { group = "com.google.devtools.ksp", name = "com.google.devtools.ksp.gradle.plugin", version.ref = "ksp" }
+androidx-appcompat = { group = "androidx.appcompat", name = "appcompat", version.ref = "appcompat" }
+material = { group = "com.google.android.material", name = "material", version.ref = "material" }
+kotlinx-coroutines-core = { group = "org.jetbrains.kotlinx", name = "kotlinx-coroutines-core", version.ref = "kotlinxCoroutines" }
+kotlinx-coroutines-android = { group = "org.jetbrains.kotlinx", name = "kotlinx-coroutines-android", version.ref = "kotlinxCoroutines" }
 
 [plugins]
 android-application = { id = "com.android.application", version.ref = "agp" }
@@ -51,3 +58,4 @@ congdanh-android-application = { id = "congdanh.android.application", version = 
 congdanh-android-library = { id = "congdanh.android.library", version = "unspecified" }
 congdanh-android-hilt = { id = "congdanh.android.hilt", version = "unspecified" }
 congdanh-android-room = { id = "congdanh.android.room", version = "unspecified" }
+android-library = { id = "com.android.library", version.ref = "agp" }

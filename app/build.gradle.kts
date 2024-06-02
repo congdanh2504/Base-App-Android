@@ -1,5 +1,6 @@
 plugins {
     alias(libs.plugins.congdanh.android.application)
+    alias(libs.plugins.congdanh.android.hilt)
 }
 
 android {
@@ -39,6 +40,9 @@ android {
 }
 
 dependencies {
+    implementation(project(":data"))
+    implementation(project(":common"))
+    implementation(project(":domain"))
 
     implementation(libs.androidx.core.ktx)
     implementation(libs.androidx.lifecycle.runtime.ktx)

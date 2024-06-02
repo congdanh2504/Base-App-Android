@@ -10,7 +10,7 @@ class AndroidLibraryConventionPlugin : Plugin<Project> {
 
     override fun apply(target: Project) = target.run {
         pluginManager.run {
-            apply(libs.plugin("kotlin.android").pluginId)
+            apply(libs.plugin("jetbrains.kotlin.android").pluginId)
             apply(libs.plugin("android.library").pluginId)
         }
 
