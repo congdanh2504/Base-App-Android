@@ -30,11 +30,11 @@ import java.util.Locale
 
 @SuppressLint("UnusedMaterial3ScaffoldPaddingParameter")
 @Composable
-fun HomeScreen(notes: List<Note>, onAddNote: () -> Unit) {
+fun HomeScreen(notes: List<Note>, onNavigateToAddNote: () -> Unit) {
     Scaffold(
         floatingActionButton = {
             FloatingActionButton(onClick = {
-                onAddNote()
+                onNavigateToAddNote()
             }) {
                 Icon(Icons.Filled.Add, contentDescription = "Add note")
             }

@@ -35,7 +35,7 @@ class NoteRepositoryImpl @Inject constructor(
 
     override suspend fun delete(note: Note) {
         withContext(dispatchers.io) {
-            noteDao.deleteById(note.asEntity())
+            noteDao.delete(note.asEntity())
         }
     }
 

@@ -11,6 +11,13 @@ android {
         testInstrumentationRunner = "androidx.test.runner.AndroidJUnitRunner"
     }
 
+    testOptions {
+        unitTests {
+            isIncludeAndroidResources = true
+            isReturnDefaultValues = true
+        }
+    }
+
     buildTypes {
         release {
             isMinifyEnabled = false
@@ -25,4 +32,8 @@ android {
 dependencies {
     implementation(project(":common"))
     implementation(project(":domain"))
+    testImplementation(libs.kotlinx.coroutines.test)
+    implementation(libs.mockito.core)
+    testImplementation(libs.core.testing)
+    testImplementation(libs.mockito.inline)
 }
